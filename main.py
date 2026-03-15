@@ -168,7 +168,7 @@ def main() -> None:
             fps_timer       = time.time()
 
         # ── HUD overlay ───────────────────────────────────
-        hand_count = len(results.multi_hand_landmarks) if results.multi_hand_landmarks else 0
+        hand_count = len(results.hand_landmarks) if results.hand_landmarks else 0
 
         draw_hud_box(frame, 0, 0, 360, 90)
 
